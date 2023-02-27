@@ -2,10 +2,16 @@ const core = require('@actions/core');
 const fs = require('fs');
 const github = require('@actions/github');
 const githubLabelSync = require('github-label-sync');
+const process = require('process');
 const yaml = require('js-yaml');
 
 const config = yaml.load(fs.readFileSync(core.getInput('config'), 'utf8'));
 const octokit = github.getOctokit(core.getInput('token'));
+
+const logAndExit = function (err) {
+    console.log(err);
+    process.exit(1);
+}
 
 for (const org of config['orgs']) {
     console.log(`org: ${org}`);
@@ -22,11 +28,7 @@ for (const org of config['orgs']) {
                 repo: repo['full_name'],
             }).then((diff) => {
                 console.log(`\n\n Repository: ${repo['full_name']}:\n${diff}`)
-            }).catch((err) => {
-                console.log(err);
-            });
+            }).catch(logAndExit);
         }
-    }).catch((err) => {
-        console.log(err);
-    });
+    }).catch(logAndExit);
 }
