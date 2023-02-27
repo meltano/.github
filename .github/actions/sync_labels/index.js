@@ -16,8 +16,6 @@ const logAndExit = function (err) {
 for (const org of config['orgs']) {
     octokit.rest.repos.listForOrg({ org: org }).then((data) => {
         for (const repo of data['data']) {
-            console.log(repo);
-            console.log(`${JSON.stringify(repo, null, 4)}`);
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
@@ -27,7 +25,7 @@ for (const org of config['orgs']) {
                 labels: config['labels'],
                 repo: repo['full_name'],
             }).then((diff) => {
-                console.log(`\n\n Repository: ${repo['full_name']}:\n${diff}`)
+                console.log(`\n\n Repository: ${repo['full_name']}:\n${JSON.stringify(diff, null, 4)}`)
             }).catch(logAndExit);
         }
     }).catch(logAndExit);
