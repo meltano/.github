@@ -19,13 +19,13 @@ for (const org of config['orgs']) {
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
-                allowAddedLabels: true,
+                allowAddedLabels: false,// true,
                 accessToken: core.getInput('token'),
                 dryRun: true, // core.getBooleanInput('dry-run'),
                 labels: config['labels'],
                 repo: repo['full_name'],
             }).then((diff) => {
-                console.log(`\n\n Repository: ${repo['full_name']}:\n${JSON.stringify(diff, null, 4)}`)
+                console.log(`\n\n ${repo['full_name']}:\n${JSON.stringify(diff, null, 4)}`)
             }).catch(logAndExit);
         }
     }).catch(logAndExit);
