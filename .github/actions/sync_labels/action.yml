@@ -1,0 +1,16 @@
+name: Sync Labels
+description: Sync labels across all repositories specified in the config
+inputs:
+  token:
+    description: GitHub token with access to read and write labels, and list repositories in the Meltano and MeltanoLabs orgs
+    required: true
+  config:
+    description: The path to the label sync config file
+    default: labels.yaml
+  dry-run:
+    description: Compute label changes required, but do not apply them
+    default: 'false'
+
+runs:
+  using: node16
+  main: index.js

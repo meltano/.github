@@ -1,0 +1,9 @@
+orgs:
+- meltano
+- MeltanoLabs
+
+labels:
+- name: test-label
+  color: "ff0000"
+  aliases: []
+  description: test label description

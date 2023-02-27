@@ -1,0 +1,31 @@
+name: Sync Labels
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'labels.yaml'
+      - '.github/actions/sync_labels/**'
+      - '.github/workflows/sync_labels.yml'
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Compute label changes required, but do not apply them
+        type: boolean
+        required: true
+        default: false
+
+# Do not allow multiple label sync workflows to run in parallel
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.3.0
+      - uses: .github/actions/sync_labels
+        with:
+          token: ${{ secrets.MELTYBOT_GITHUB_AUTH_TOKEN }}
