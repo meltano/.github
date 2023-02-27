@@ -15,7 +15,7 @@ for (const org in config['orgs']) {
                 // false all labels not specified in the config will be deleted
                 allowAddedLabels: true,
                 accessToken: core.getInput('token'),
-                dryRun: core.getBooleanInput('dry-run'),
+                dryRun: true, // core.getBooleanInput('dry-run'),
                 labels: config['labels'],
                 repo: repo['full_name'],
             }).then((diff) => {
