@@ -5,7 +5,7 @@ const githubLabelSync = require('github-label-sync');
 const yaml = require('js-yaml');
 
 const config = yaml.load(fs.readFileSync(core.getInput('config'), 'utf8'));
-const octokit = github.getOctokit(core.getInput('github-token'))
+const octokit = github.getOctokit(core.getInput('token'))
 
 for (const org in config['orgs']) {
     octokit.repos.listForOrg({ org: org }).then((data, headers, status) => {
@@ -14,7 +14,7 @@ for (const org in config['orgs']) {
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
                 allowAddedLabels: true,
-                accessToken: core.getInput('github-token'),
+                accessToken: core.getInput('token'),
                 dryRun: core.getBooleanInput('dry-run'),
                 labels: config['labels'],
                 repo: repo['full_name'],
