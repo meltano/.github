@@ -19,9 +19,9 @@ for (const org of config['orgs']) {
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
-                allowAddedLabels: false,// true,
+                allowAddedLabels: true,
                 accessToken: core.getInput('token'),
-                dryRun: true, // core.getBooleanInput('dry-run'),
+                dryRun: core.getBooleanInput('dry-run'),
                 labels: config['labels'],
                 repo: repo['full_name'],
             }).then((diff) => {
