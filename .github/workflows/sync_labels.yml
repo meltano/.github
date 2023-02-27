@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: Compute label changes required, but do not apply them
+        description: Dry run
         type: boolean
         required: true
         default: false
