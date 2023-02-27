@@ -14,10 +14,11 @@ const logAndExit = function (err) {
 }
 
 for (const org of config['orgs']) {
-    console.log(`org: ${org}`);
     octokit.rest.repos.listForOrg({ org: org }).then((data) => {
-        // console.log(`data: ${JSON.stringify(data, null, 4)}\n\n`);
         for (const repo in data['data']) {
+            if (repo['full_name'] === null) {
+                console.log(`${JSON.stringify(repo, null, 4)}`);
+            }
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
