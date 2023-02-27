@@ -15,7 +15,7 @@ const logAndExit = function (err) {
 
 for (const org of config['orgs']) {
     octokit.rest.repos.listForOrg({ org: org }).then((data) => {
-        for (const repo in data['data']) {
+        for (const repo of data['data']) {
             console.log(repo);
             console.log(`${JSON.stringify(repo, null, 4)}`);
             githubLabelSync({
