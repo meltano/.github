@@ -26,6 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.3.0
-      - uses: .github/actions/sync_labels
+      - uses: ./.github/actions/sync_labels
         with:
           token: ${{ secrets.MELTYBOT_GITHUB_AUTH_TOKEN }}
