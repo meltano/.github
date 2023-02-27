@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: Dry run
+        description: dry run
         type: boolean
         required: true
         default: false
