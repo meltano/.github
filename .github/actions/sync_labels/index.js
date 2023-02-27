@@ -17,7 +17,7 @@ for (const org of config['orgs']) {
     console.log(`org: ${org}`);
     octokit.rest.repos.listForOrg({ org: org }).then((data, headers, status) => {
         console.log(`data: ${JSON.stringify(data, null, 4)}\n\n`);
-        for (const repo in data) {
+        for (const repo in data['data']) {
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
