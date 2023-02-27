@@ -8,6 +8,7 @@ const config = yaml.load(fs.readFileSync(core.getInput('config'), 'utf8'));
 const octokit = github.getOctokit(core.getInput('token'));
 
 for (const org in config['orgs']) {
+    console.log(org);
     octokit.rest.repos.listForOrg({ org: org }).then((data, headers, status) => {
         for (const repo in data) {
             githubLabelSync({
