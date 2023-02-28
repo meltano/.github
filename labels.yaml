@@ -52,7 +52,7 @@ labels:
   - name: "api"
     color: "CD5B45"
   - name: "Accepting Pull Requests"
-    color: 0E8A16
+    color: "0E8A16"
     aliases:
       - "accepting pull requests"
       - "accepting merge requests"
@@ -280,13 +280,13 @@ labels:
   - name: "v2.0"
     color: "3CB371"
   - name: "has attachment"
-    color: FBCA04
+    color: "FBCA04"
   - name: "gitlab merge request"
     color: "B36B00"
   - name: "migrated from gitlab"
     color: "EB2FBD"
   - name: "Telemetry"
-    color: 0052CC
+    color: "0052CC"
     aliases:
       - "telemetry"
   - name: "reminder"
@@ -340,7 +340,7 @@ labels:
   - name: "content"
     color: "C21E56"
   - name: "content review"
-    color: 5319E7
+    color: "5319E7"
     description: "Request for Eng or Product Content Review"
   - name: "dx"
     color: "C21E56"
@@ -358,7 +358,7 @@ labels:
       - "marketing::blog feature"
   - name: "Marketing Priority"
     description: "cross-functional support request"
-    color: 5319E7
+    color: "5319E7"
   - name: "mktgops::backlog"
     color: "36454F"
   - name: "mktgops::blocked"
@@ -373,7 +373,7 @@ labels:
     color: "6699CC"
   - name: "needs-engineering"
     description: "from marketing needs engineering"
-    color: 5319E7
+    color: "5319E7"
   - name: "p1-mktgops"
     color: "843B39"
   - name: "p2-mktgops"
@@ -389,21 +389,21 @@ labels:
   #     Plugins      #
   ####################
   - name: "plugin/Airflow"
-    color: 1D76DB
+    color: "1D76DB"
     aliases:
       - "plugin::airflow"
   - name: "plugin/dbt"
-    color: BFD4F2
+    color: "BFD4F2"
   - name: "plugin/Great Expectations"
-    color: C2E0C6
+    color: "C2E0C6"
   - name: "plugin/Singer"
-    color: 1D76DB
+    color: "1D76DB"
   - name: "plugin/SQLFluff"
     color: "808080"
     aliases:
       - "plugin::sqlfluff"
   - name: "plugin/Superset"
-    color: BFDADC
+    color: "BFDADC"
 
   ####################
   #     Strategy     #
