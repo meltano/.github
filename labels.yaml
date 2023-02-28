@@ -2,7 +2,7 @@ orgs:
 - meltano
 - MeltanoLabs
 
-labels: 
+labels:
   ####################
   #      Colors      #
   ####################
@@ -27,27 +27,27 @@ labels:
   #      Common      #
   ####################
   - name: "Documentation"
-    description: Improvements or additions to documentation  
+    description: Improvements or additions to documentation
     color: "0075CA"
     aliases:
      - "documentation"
   - name: "duplicate"
-    description: This issue or pull request already exists   
+    description: This issue or pull request already exists
     color: "CFD3D7"
   - name: "good first issue"
-    description: Good for newcomers                          
+    description: Good for newcomers
     color: "7057FF"
   - name: "help wanted"
-    description: Extra attention is needed                   
+    description: Extra attention is needed
     color: "008672"
   - name: "invalid"
-    description: This doesn't seem right                     
+    description: This doesn't seem right
     color: "E4E669"
   - name: "question"
-    description: Further information is requested            
+    description: Further information is requested
     color: "D876E3"
   - name: "wontfix"
-    description: This will not be worked on                  
+    description: This will not be worked on
     color: "FFFFFF"
   - name: "api"
     color: "CD5B45"
@@ -246,7 +246,7 @@ labels:
     aliases: ["enhancement","kind::feature"]
   - name: "kind/Non-Product"
     color: "36454F"
-    aliases: 
+    aliases:
       - "kind::non-product"
   - name: "kind/Risk"
     color: "EEE600"
