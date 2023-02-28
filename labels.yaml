@@ -27,7 +27,7 @@ labels:
   #      Common      #
   ####################
   - name: "Documentation"
-    description: Improvements or additions to documentation
+    description: Related to documentation
     color: "0075CA"
     aliases:
      - "documentation"
@@ -75,6 +75,8 @@ labels:
     color: "E6E6FA"
     aliases:
       - "ci/cd"
+      - "ci"
+      - "CI"
   - name: "cli"
     color: "D9534F"
   - name: "collaboration"
@@ -164,12 +166,6 @@ labels:
     color: "C21E56"
   - name: "onboarding"
     color: "00B140"
-  - name: "office hours::discussed"
-    color: "36454F"
-  - name: "office hours::to discuss"
-    color: "6699CC"
-  - name: "office hours::up next"
-    color: "0000FF"
   - name: "orchestrate"
     color: "0033CC"
   - name: "performance"
@@ -188,8 +184,6 @@ labels:
     color: "CC0033"
   - name: "regression"
     color: "FF0000"
-  - name: "release"
-    color: "69D100"
   - name: "roadmap"
     color: "CC338B"
   - name: "sales"
@@ -227,16 +221,6 @@ labels:
     aliases: ["windows support"]
   - name: "won't do"
     color: "CC0033"
-  - name: "flow::blocked"
-    color: "CC0033"
-  - name: "flow::doing"
-    color: "428BCA"
-  - name: "flow::review"
-    color: "5CB85C"
-  - name: "flow::to do"
-    color: "F0AD4E"
-  - name: "flow::triage"
-    color: "34495E"
   - name: "kind/Bug"
     color: "FF0000"
     description: "Something isn't working"
@@ -293,7 +277,7 @@ labels:
     color: "EDEDED"
 
   ####################
-  #      Data      #
+  #       Data       #
   ####################
   - name: "data/Infrastructure"
     color: "008000"
@@ -309,7 +293,7 @@ labels:
     color: "FFFFFF"
 
   ####################
-  #      Leadership      #
+  #    Leadership     #
   ####################
   - name: "designed alliance"
     color: "EEE600"
@@ -335,7 +319,7 @@ labels:
     color: "6699CC"
 
   ####################
-  #      Marketing      #
+  #     Marketing     #
   ####################
   - name: "content"
     color: "C21E56"
