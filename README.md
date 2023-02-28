@@ -1,8 +1,12 @@
 # .github repository
 
-This repository contains the workflow for synchronizing labels between all repositories in the `meltano` namespace. 
+This repository contains config files and workflows for all repositories in the [meltano](https://github.com/meltano) GitHub org (and occasionally the [MeltanoLabs]https://github.com/MeltanoLabs) GitHub org too).
 
-To add a new label, add new entry to the `labels.yml` file:
+## Label Synchronization
+
+The file [`labels.yaml`](https://github.com/meltano/.github/blob/main/labels.yaml) specifies labels which are synchronized across all repositories in the [meltano](https://github.com/meltano) and [MeltanoLabs]https://github.com/MeltanoLabs) GitHub orgs. They are updated when the file is updated on the `main` branch, or when the label sync workflow is run manually.
+
+To add a new label, add new entry to [`labels.yaml`](https://github.com/meltano/.github/blob/main/labels.yaml) under the `labels` key:
 
 ```yaml
   - name: "label name"
