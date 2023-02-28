@@ -146,8 +146,6 @@ labels:
     color: "5843AD"
   - name: "load"
     color: "0033CC"
-  - name: "making money"
-    color: "5CB85C"
   - name: "meltano - retrospective"
     color: "0033CC"
   - name: "meltano culture and values"
