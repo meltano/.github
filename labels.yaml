@@ -47,11 +47,6 @@ labels:
     color: "008672"
     aliases:
       - "help wanted"
-  - name: "invalid"
-    description: This doesn't seem right
-    color: "E4E669"
-    aliases:
-      - "Invalid"
   - name: "question"
     description: Further information is requested
     color: "D876E3"
