@@ -360,19 +360,19 @@ labels:
       - "visualization"
   - name: "Windows"
     color: "428BCA"
-    aliases: 
+    aliases:
       - "windows support"
       - "Windows Support"
   - name: "bug"
     color: "FF0000"
     description: "Something isn't working"
-    aliases: 
+    aliases:
      - "kind::bug"
      - "kind/Bug"
      - "kind::Bug"
   - name: "kind/Feature"
     color: "428BCA"
-    aliases: 
+    aliases:
       - "enhancement"
       - "kind::feature"
       - "kind::Feature"
@@ -569,7 +569,7 @@ labels:
     color: "9400D3"
     aliases:
       - "okr: be the dataops os"
-      - "OKR: Be the DataOps OS" 
+      - "OKR: Be the DataOps OS"
   - name: "OKR: Build the Team (Hiring)"
     color: "9400D3"
     aliases:
