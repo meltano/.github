@@ -276,14 +276,6 @@ labels:
       - "plugin management"
   - name: "process"
     color: "808080"
-  - name: "Product"
-    color: "428BCA"
-    aliases:
-      - "product"
-  - name: "Product Vision"
-    color: "0033CC"
-    aliases:
-      - "product vision"
   - name: "Root Cause Analysis"
     color: "CC0033"
     aliases:
@@ -293,10 +285,6 @@ labels:
     color: "FF0000"
     aliases:
       - "regression"
-  - name: "Roadmap"
-    color: "CC338B"
-    aliases:
-      - "roadmap"
   - name: "Sales"
     color: "D1D100"
     aliases:
@@ -445,6 +433,28 @@ labels:
     color: "FFFFFF"
 
   ####################
+  #   Engineering    #
+  ####################
+  - name: "automation"
+    color: "5319E7"
+  - name: "env var"
+    color: "5319E7"
+  - name: "pip dependencies"
+    color: "03AF02"
+  - name: "post-migration cleanup"
+    color: "30B3EE"
+  - name: "python"
+    color: "0E8A16"
+  - name: "release"
+    color: "69D100"
+    aliases:
+      - "Release"
+  - name: "GitHub Actions"
+    color: "5319E7"
+    aliases:
+      - "github_actions"
+
+  ####################
   #    Leadership     #
   ####################
   - name: "Designed Alliance"
@@ -538,6 +548,44 @@ labels:
     color: "BB6797"
 
   ####################
+  #        HR        #
+  ####################
+  - name: "Lattice Setup"
+    color: "5319E7"
+
+  ####################
+  #      Product     #
+  ####################
+  - name: "Epic"
+    color: "BFD4F2"
+    aliases:
+      - "epic"
+  - name: "Extractors"
+    color: "5319E7"
+    aliases:
+      - "Applies To::Taps"
+  - name: "Loaders"
+    color: "5319E7"
+    aliases:
+      - "Applies To::Targets"
+  - name: "Payments and Billing"
+    color: "BAF91A"
+    aliases:
+      - "payments and billing"
+  - name: "Product"
+    color: "428BCA"
+    aliases:
+      - "product"
+  - name: "Product Vision"
+    color: "0033CC"
+    aliases:
+      - "product vision"
+  - name: "Roadmap"
+    color: "CC338B"
+    aliases:
+      - "roadmap"
+
+  ####################
   #     Plugins      #
   ####################
   - name: "plugin/Airflow"
@@ -556,6 +604,26 @@ labels:
       - "plugin::sqlfluff"
   - name: "plugin/Superset"
     color: "BFDADC"
+
+  ########################
+  # Singer Working Group #
+  ########################
+  - name: "Proposal Type::Expanded Docs"
+    color: "C5DEF5"
+  - name: "Proposal Type::New Capability"
+    color: "BFD4F2"
+  - name: "Proposal Type::Resources (Other)"
+    color: "1D76DB"
+  - name: "Proposal Type::Self Governance"
+    color: "0052CC"
+  - name: "Issue Type::Challenge or Concern"
+    color: "C2E0C6"
+  - name: "Issue Type::Proposal"
+    color: "20B68B"
+  - name: "Issue Type::Question"
+    color: "d876e3"
+  - name: "skills:Python"
+    color: "E4D225"
 
   ####################
   #     Strategy     #
@@ -642,71 +710,3 @@ labels:
     color: "5319E7"
   - name: "Fivetran"
     color: "1D76DB"
-
-  ####################
-  #      Product     #
-  ####################
-  - name: "Epic"
-    color: "BFD4F2"
-    aliases:
-      - "epic"
-  - name: "Extractors"
-    color: "5319E7"
-    aliases:
-      - "Applies To::Taps"
-  - name: "Loaders"
-    color: "5319E7"
-    aliases:
-      - "Applies To::Targets"
-  - name: "Payments and Billing"
-    color: "BAF91A"
-    aliases:
-      - "payments and billing"
-
-  ####################
-  #   Engineering    #
-  ####################
-  - name: "automation"
-    color: "5319E7"
-  - name: "env var"
-    color: "5319E7"
-  - name: "pip dependencies"
-    color: "03AF02"
-  - name: "post-migration cleanup"
-    color: "30B3EE"
-  - name: "python"
-    color: "0E8A16"
-  - name: "release"
-    color: "69D100"
-    aliases:
-      - "Release"
-  - name: "GitHub Actions"
-    color: "5319E7"
-    aliases:
-      - "github_actions"
-
-  ####################
-  #        HR        #
-  ####################
-  - name: "Lattice Setup"
-    color: "5319E7"
-
-  #######################
-  # Singe Working Group #
-  #######################
-  - name: "Proposal Type::Expanded Docs"
-    color: "C5DEF5"
-  - name: "Proposal Type::New Capability"
-    color: "BFD4F2"
-  - name: "Proposal Type::Resources (Other)"
-    color: "1D76DB"
-  - name: "Proposal Type::Self Governance"
-    color: "0052CC"
-  - name: "Issue Type::Challenge or Concern"
-    color: "C2E0C6"
-  - name: "Issue Type::Proposal"
-    color: "20B68B"
-  - name: "Issue Type::Question"
-    color: "d876e3"
-  - name: "skills:Python"
-    color: "E4D225"
