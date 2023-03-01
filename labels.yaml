@@ -34,23 +34,38 @@ labels:
   - name: "duplicate"
     description: This issue or pull request already exists
     color: "CFD3D7"
-  - name: "good first issue"
+    aliases:
+      - "Duplicate"
+      - "Zzz::Duplicate"
+  - name: "Good First Issue"
     description: Good for newcomers
     color: "7057FF"
-  - name: "help wanted"
+    aliases:
+      - "good first issue"
+  - name: "Help Wanted"
     description: Extra attention is needed
     color: "008672"
+    aliases:
+      - "help wanted"
   - name: "invalid"
     description: This doesn't seem right
     color: "E4E669"
+    aliases:
+      - "Invalid"
   - name: "question"
     description: Further information is requested
     color: "D876E3"
   - name: "wontfix"
     description: This will not be worked on
     color: "FFFFFF"
-  - name: "api"
+    aliases:
+      - "won't do"
+      - "Won't Do"
+      - "Zzz::Wontfix"
+  - name: "API"
     color: "CD5B45"
+    aliases:
+      - "api"
   - name: "Accepting Pull Requests"
     color: "0E8A16"
     aliases:
@@ -59,16 +74,25 @@ labels:
       - "Accepting Merge Requests"
   - name: "analyze"
     color: "0033CC"
-  - name: "architecture decision"
+    aliases:
+      - "Analyze"
+  - name: "Architecture Decision"
     color: "A8D695"
+    aliases:
+      - "architecture decision"
   - name: "Awaiting Action/Author"
     color: "9400D3"
     aliases:
       - "awaiting action::author"
+      - "Awaiting Action::Author"
   - name: "backend"
     color: "C39953"
-  - name: "breaking change"
+    aliases:
+      - "Backend"
+  - name: "Breaking Change"
     color: "9400D3"
+    aliases:
+      - "breaking change"
   - name: "candidate"
     color: "C39953"
   - name: "CI/CD"
@@ -77,167 +101,296 @@ labels:
       - "ci/cd"
       - "ci"
       - "CI"
-  - name: "cli"
+  - name: "CLI"
     color: "D9534F"
-  - name: "collaboration"
+    aliases:
+      - "cli"
+  - name: "Collaboration"
     color: "AD4363"
-  - name: "community"
+    aliases:
+      - "collaboration"
+  - name: "Community"
     color: "8E44AD"
+    aliases:
+      - "community"
   - name: "Community-Contributed PR"
     color: "E6E6FA"
     aliases:
       - "community-contributed pr"
+      - "Community-Contributed MR"
       - "community-contributed mr"
-  - name: "configuration"
+  - name: "Configuration"
     color: "7F8C8D"
-  - name: "customer prospect"
+    aliases:
+      - "configuration"
+  - name: "Customer Prospect"
     color: "004E00"
-  - name: "customer success"
+    aliases:
+      - "customer prospect"
+  - name: "Customer Success"
     color: "004E00"
-  - name: "customer support"
+    aliases:
+      - "customer success"
+  - name: "Customer Support"
     color: "7F8C8D"
-  - name: "d&i"
+    aliases:
+      - "customer support"
+  - name: "D&I"
     color: "CC338B"
-  - name: "dashboard"
+    description: "Related to diversity and inclusion"
+    aliases:
+      - "d&i"
+  - name: "Dashboard"
     color: "5CB85C"
-  - name: "data science / ml"
+    aliases:
+      - "dashboard"
+  - name: "Data Science / ML"
     color: "FFECDB"
-  - name: "demo day::shared"
+    aliases:
+      - "data science / ml"
+  - name: "Demo Day::Shared"
     color: "C39953"
-  - name: "demo day::to share"
+    aliases:
+      - "demo day::shared"
+  - name: "Demo Day::To Share"
     color: "ED9121"
-  - name: "demo day::up next"
+    aliases:
+      - "demo day::to share"
+  - name: "Demo Day::Up Next"
     color: "F7E7CE"
-  - name: "deployment"
+    aliases:
+      - "demo day::up next"
+  - name: "Deployment"
     color: "D1D100"
-  - name: "deps"
+    aliases:
+      - "deployment"
+  - name: "Deps"
     color: "5CB85C"
-  - name: "discussion"
+    aliases:
+      - "deps"
+      - "dependencies"
+  - name: "Discussion"
     color: "AD8D43"
-  - name: "docker"
+    aliases:
+      - "discussion"
+  - name: "Docker"
     color: "428BCA"
-  - name: "dogfooding"
+    aliases:
+      - "docker"
+  - name: "Dogfooding"
     color: "8E44AD"
-  - name: "enterprise edition ideas"
+    aliases:
+      - "dogfooding"
+  - name: "Enterprise Edition Ideas"
     color: "69D100"
-  - name: "exploration"
+    aliases:
+      - "enterprise edition ideas"
+  - name: "Exploration"
     color: "F0AD4E"
-  - name: "extract"
+    aliases:
+      - "exploration"
+  - name: "Extract"
     color: "0033CC"
-  - name: "frontend"
+    aliases:
+      - "extract"
+  - name: "Frontend"
     color: "ED9121"
-  - name: "hack day"
+    aliases:
+      - "frontend"
+  - name: "Hack Day"
     color: "E6E6FA"
-  - name: "handbook"
+    aliases:
+      - "hack day"
+  - name: "Handbook"
     color: "3CB371"
-  - name: "hired"
+    aliases:
+      - "handbook"
+  - name: "Hired"
     color: "009966"
-  - name: "housekeeping"
+    aliases:
+      - "hired"
+  - name: "Housekeeping"
     color: "D10069"
+    aliases:
+      - "housekeeping"
   - name: "incident"
     color: "CC0033"
+    aliases:
+      - "Incident"
   - name: "installation"
     color: "FF0000"
+    aliases:
+      - "Installation"
   - name: "integrations"
     color: "6699CC"
+    aliases:
+      - "Integrations"
   - name: "internal"
     color: "CC0033"
+    aliases:
+      - "Internal"
   - name: "legal"
     color: "5843AD"
+    aliases:
+      - "Legal"
   - name: "load"
     color: "0033CC"
-  - name: "meltano - retrospective"
-    color: "0033CC"
-  - name: "meltano culture and values"
+    aliases:
+      - "Load"
+  - name: "Meltano Culture and Values"
     color: "9400D3"
+    aliases:
+      - "meltano culture and values"
   - name: "meltano.com"
     color: "5843AD"
-  - name: "model"
+    aliases:
+      - "Meltano.com"
+  - name: "Model"
     color: "0033CC"
+    aliases:
+      - "model"
   - name: "needs refinement"
     color: "C21E56"
+    aliases:
+      - "Needs Refinement"
   - name: "needs research spike"
     color: "C21E56"
-  - name: "notebook"
+    aliases:
+      - "Needs Research Spike"
+  - name: "Notebook"
     color: "0033CC"
+    aliases:
+      - "notebook"
   - name: "offboarding"
     color: "C21E56"
-  - name: "onboarding"
+  - name: "Onboarding"
     color: "00B140"
-  - name: "orchestrate"
+    aliases:
+      - "onboarding"
+  - name: "Orchestrate"
     color: "0033CC"
-  - name: "performance"
+    aliases:
+      - "orchestrate"
+  - name: "Performance"
     color: "D9534F"
-  - name: "plugin management"
+    aliases:
+      - "performance"
+  - name: "Plugin Management"
     color: "6699CC"
+    aliases:
+      - "plugin management"
   - name: "process"
     color: "808080"
-  - name: "product"
+  - name: "Product"
     color: "428BCA"
-  - name: "product vision"
+    aliases:
+      - "product"
+  - name: "Product Vision"
     color: "0033CC"
-  - name: "project awesome"
-    color: "6699CC"
-  - name: "rca"
+    aliases:
+      - "product vision"
+  - name: "Root Cause Analysis"
     color: "CC0033"
-  - name: "regression"
+    aliases:
+      - "rca"
+      - "RCA"
+  - name: "Regression"
     color: "FF0000"
-  - name: "roadmap"
+    aliases:
+      - "regression"
+  - name: "Roadmap"
     color: "CC338B"
-  - name: "sales"
+    aliases:
+      - "roadmap"
+  - name: "Sales"
     color: "D1D100"
-  - name: "salesforce"
+    aliases:
+      - "sales"
+  - name: "Salesforce"
     color: "428BCA"
-  - name: "security"
+    aliases:
+      - "salesforce"
+  - name: "Security"
     color: "34495E"
-  - name: "snowflake"
+    aliases:
+      - "security"
+  - name: "Snowflake"
     color: "428BCA"
-  - name: "start stop continue"
+    aliases:
+      - "snowflake"
+  - name: "Start Stop Continue"
     color: "9402D3"
+    aliases:
+      - "start stop continue"
   - name: "testing"
     color: "7F8C8D"
-  - name: "transform"
+    aliases:
+      - "Testing"
+  - name: "Transform"
     color: "0033CC"
-  - name: "tutorials"
+    aliases:
+      - "transform"
+  - name: "Tutorials"
     color: "A8D695"
-  - name: "ui"
+    aliases:
+      - "tutorials"
+  - name: "UI"
     color: "428BCA"
-  - name: "ux"
+    aliases:
+      - "ui"
+  - name: "UX"
     color: "428BCA"
-  - name: "user onboarding"
+    aliases:
+      - "ux"
+  - name: "User Onboarding"
     color: "A8D695"
-  - name: "user research"
+    aliases:
+      - "user onboarding"
+  - name: "User Research"
     color: "428BCA"
+    aliases:
+      - "user research"
   - name: "User Support"
     color: "6699CC"
     aliases:
       - "user support"
-  - name: "visualization"
+  - name: "Visualization"
     color: "5CB85C"
+    aliases:
+      - "visualization"
   - name: "Windows"
     color: "428BCA"
-    aliases: ["windows support"]
-  - name: "won't do"
-    color: "CC0033"
-  - name: "kind/Bug"
+    aliases: 
+      - "windows support"
+      - "Windows Support"
+  - name: "bug"
     color: "FF0000"
     description: "Something isn't working"
-    aliases: ["kind::bug","bug"]
+    aliases: 
+     - "kind::bug"
+     - "kind/Bug"
+     - "kind::Bug"
   - name: "kind/Feature"
     color: "428BCA"
-    aliases: ["enhancement","kind::feature"]
+    aliases: 
+      - "enhancement"
+      - "kind::feature"
+      - "kind::Feature"
   - name: "kind/Non-Product"
     color: "36454F"
     aliases:
       - "kind::non-product"
+      - "kind::Non-Product"
   - name: "kind/Risk"
     color: "EEE600"
     aliases:
       - "kind::risk"
+      - "kind::Risk"
   - name: "kind/Tech Debt"
     color: "ED9121"
     aliases:
       - "kind::tech debt"
+      - "kind::Tech Debt"
   - name: "urgency/Default"
     color: "EDEDED"
     aliases:
@@ -261,12 +414,18 @@ labels:
       - "urgency::low"
   - name: "v2.0"
     color: "3CB371"
-  - name: "has attachment"
+  - name: "Has Attachment"
     color: "FBCA04"
-  - name: "gitlab merge request"
+    aliases:
+      - "has attachment"
+  - name: "GitLab Merge Request"
     color: "B36B00"
-  - name: "migrated from gitlab"
+    aliases:
+      - "gitlab merge request"
+  - name: "Migrated From GitLab"
     color: "EB2FBD"
+    aliases:
+      - "migrated from gitlab"
   - name: "Telemetry"
     color: "0052CC"
     aliases:
@@ -293,8 +452,10 @@ labels:
   ####################
   #    Leadership     #
   ####################
-  - name: "designed alliance"
+  - name: "Designed Alliance"
     color: "EEE600"
+    aliases:
+      - "designed alliance"
   - name: "execsponsor/AJ"
     aliases:
       - "execsponsor::aj"
@@ -302,9 +463,7 @@ labels:
   - name: "execsponsor/Douwe"
     aliases:
       - "execsponsor::douwe"
-    color: "6699CC"
-  - name: "execsponsor/Emily"
-    aliases:
+      - "execsponsor/Emily"
       - "execsponsor::emily"
     color: "6699CC"
   - name: "execsponsor/Reb"
@@ -319,21 +478,37 @@ labels:
   ####################
   #     Marketing     #
   ####################
-  - name: "content"
+  - name: "Content"
     color: "C21E56"
-  - name: "content review"
+    aliases:
+      - "content"
+  - name: "Content Review"
     color: "5319E7"
     description: "Request for Eng or Product Content Review"
-  - name: "dx"
+    aliases:
+      - "content review"
+  - name: "DX"
     color: "C21E56"
-  - name: "event"
+    description: "Related to developer experience"
+    aliases:
+      - "dx"
+      - "developer experience"
+  - name: "Event"
     color: "C21E56"
-  - name: "google tag manager"
+    aliases:
+      - "event"
+  - name: "Google Tag Manager (GTM)"
     color: "6699CC"
-  - name: "hubspot"
+    aliases:
+      - "google tag manager"
+  - name: "Hubspot"
     color: "EDEDED"
-  - name: "marketing"
+    aliases:
+      - "hubspot"
+  - name: "Marketing"
     color: "44AD8E"
+    aliases:
+      - "marketing"
   - name: "Marketing::Blog Feature"
     color: "0000FF"
     aliases:
@@ -394,6 +569,7 @@ labels:
     color: "9400D3"
     aliases:
       - "okr: be the dataops os"
+      - "OKR: Be the DataOps OS" 
   - name: "OKR: Build the Team (Hiring)"
     color: "9400D3"
     aliases:
@@ -402,10 +578,12 @@ labels:
     color: "9400D3"
     aliases:
       - "okr: improve ease of deployment"
+      - "OKR: Improve Ease of Deployment"
   - name: "OKR: New User Experience"
     color: "9400D3"
     aliases:
       - "okr: improve new user experience"
+      - "OKR: Improve New User Experience"
   - name: "OKR: Managed Meltano - Alpha"
     color: "9400D3"
     aliases:
@@ -414,6 +592,7 @@ labels:
     color: "9400D3"
     aliases:
       - "okr: managed meltano beta"
+      - "OKR: Managed Service Beta"
   - name: "OKR: Managed Meltano - Commercial Tier"
     color: "9400D3"
     aliases:
@@ -434,23 +613,105 @@ labels:
     color: "3CB371"
     aliases:
       - "valuestream::academy"
+      - "valuestream::Academy"
   - name: "valuestream/Business Operation"
     color: "36454F"
     aliases:
       - "valuestream::business operation"
+      - "valuestream::Business Operation"
   - name: "valuestream/Ecosystem"
     color: "6699CC"
     aliases:
       - "valuestream::ecosystem"
+      - "valuestream::Ecosystem"
   - name: "valuestream/Hub"
     color: "AD4363"
     aliases:
       - "valuestream::hub"
+      - "valuestream::Hub"
   - name: "valuestream/Meltano"
     color: "434AC1"
     aliases:
       - "valuestream::meltano"
+      - "valuestream::Meltano"
   - name: "valuestream/SDK"
     color: "00B140"
     aliases:
       - "valuestream::sdk"
+      - "valuestream::SDK"
+
+  ####################
+  #      Vendors     #
+  ####################
+  - name: "Airbyte"
+    color: "5319E7"
+  - name: "Fivetran"
+    color: "1D76DB"
+
+  ####################
+  #      Product     #
+  ####################
+  - name: "Epic"
+    color: "BFD4F2"
+    aliases:
+      - "epic"
+  - name: "Extractors"
+    color: "5319E7"
+    aliases:
+      - "Applies To::Taps"
+  - name: "Loaders"
+    color: "5319E7"
+    aliases:
+      - "Applies To::Targets"
+  - name: "Payments and Billing"
+    color: "BAF91A"
+    aliases:
+      - "payments and billing"
+
+  ####################
+  #   Engineering    #
+  ####################
+  - name: "automation"
+    color: "5319E7"
+  - name: "env var"
+    color: "5319E7"
+  - name: "pip dependencies"
+    color: "03AF02"
+  - name: "post-migration cleanup"
+    color: "30B3EE"
+  - name: "python"
+    color: "0E8A16"
+  - name: "release"
+    color: "69D100"
+    aliases:
+      - "Release"
+  - name: "GitHub Actions"
+    color: "5319E7"
+    aliases:
+      - "github_actions"
+
+  ####################
+  #        HR        #
+  ####################
+  - name: "Lattice Setup"
+    color: "5319E7"
+
+  #######################
+  # Singe Working Group #
+  #######################
+  - name: "Proposal Type::Expanded Docs"
+    color: "C5DEF5"
+  - name: "Proposal Type::New Capability"
+    color: "BFD4F2"
+  - name: "Proposal Type::Resources (Other)"
+    color: "1D76DB"
+  - name: "Proposal Type::Self Governance"
+    color: "0052CC"
+  - name: "Issue Type::Challenge or Concern"
+    color: "C2E0C6"
+  - name: "Issue Type::Proposal"
+    color: "20B68B"
+  - name: "Issue Type::Question"
+    color: "d876e3"
+  - name: "skills:Python"
+    color: "E4D225"
