@@ -64,6 +64,7 @@ const generateAliases = function (config) {
 for (const org of config['orgs']) {
     octokit.rest.repos.listForOrg({ org: org }).then((data) => {
         for (const repo of data['data']) {
+            if (repo['archived']) continue;
             githubLabelSync({
                 // Avoid broadly destructive actions - if allowAddedLabels is
                 // false all labels not specified in the config will be deleted
