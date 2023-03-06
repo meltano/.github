@@ -38,8 +38,8 @@ String.prototype.toTitleCase = function() {
 // - 'wontfix'
 // - 'WONTFIX'
 // - 'Wontfix'
-const generateAliases = function (config) {
-    for (const label of config['labels']) {
+const generateAliases = function (labels) {
+    for (const label of labels) {
         const aliases = new Set(
             [label['name'], ...(label['aliases'] ?? [])].flatMap((text) => {
                 return [
@@ -58,7 +58,7 @@ const generateAliases = function (config) {
         aliases.delete(label['name']);
         label['aliases'] = Array.from(aliases);
     }
-    return config;
+    return labels;
 }
 
 for (const org of config['orgs']) {
