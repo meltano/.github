@@ -71,6 +71,7 @@ labels:
     color: "C39953"
   - name: "CI/CD"
     color: "E6E6FA"
+    aliases:
       - "ci"
       - "CI"
   - name: "CLI"
