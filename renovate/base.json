@@ -9,6 +9,7 @@
         "enabled": true,
         "automerge": true
     },
+    "rebaseWhen": "conflicted",
     "minimumReleaseAge": "7 days",
     "packageRules": [
         {
