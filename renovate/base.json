@@ -4,7 +4,7 @@
         "config:recommended",
         ":disableDependencyDashboard"
     ],
-    "platformAutomerge": false,
+    "platformAutomerge": true,
     "lockFileMaintenance": {
         "enabled": true,
         "automerge": true
